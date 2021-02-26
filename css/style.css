@@ -76,6 +76,7 @@ body {
     font-weight: 400;
     border: none;
     font-weight: 900;
+    border-radius: 5rem;
 }
 .boton:hover {
     cursor: pointer;
@@ -150,6 +151,12 @@ body.index {
 .lista-proyectos ul li a:hover {
     color: #FDD835;
 }
+input#nuevo-proyecto {
+    border-radius: 1rem;
+    border: none;
+    width: 100%;
+    
+}
 
 
 /** Contenido Principal */
@@ -184,6 +191,7 @@ body.index {
     padding: 2rem;
     color: white;
     transition: background-color .5s ease-in-out;
+    border-radius: 1rem;
 }
 
 /** Listado Pendientes **/
@@ -194,6 +202,7 @@ body.index {
     margin: 2rem auto 0 auto;
     padding: 2rem;
     border: 1px solid #999;
+    border-radius: 1rem;
 }
 .listado-pendientes ul {
     padding: 0;

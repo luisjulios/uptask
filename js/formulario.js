@@ -4,7 +4,7 @@ function eventListeners() {
 }
 function validarRegistro(e) {
   e.preventDefault();
-  var usuario = document.querySelector('#usuario').value,
+  let usuario = document.querySelector('#usuario').value,
       password = document.querySelector('#password').value,
       tipo = document.querySelector('#tipo').value;
       if (usuario === '' || password === '') {
@@ -18,13 +18,13 @@ function validarRegistro(e) {
         //Ambos campos son correctos
 
         //Datos que se envian al servidor
-        var datos = new FormData();
+        let datos = new FormData();
         datos.append('usuario', usuario);
         datos.append('password', password);
         datos.append('accion', tipo);
 
         //Llamar a AJAX
-        var xhr = new XMLHttpRequest();
+        let xhr = new XMLHttpRequest();
 
         //Abrir la conexión
         xhr.open('POST', 'inc/modelos/modelo-admin.php', true);
@@ -32,7 +32,7 @@ function validarRegistro(e) {
         //Retorno de datos
         xhr.onload = function() {
           if(this.status === 200) {
-            var respuesta = JSON.parse(xhr.responseText);
+            let respuesta = JSON.parse(xhr.responseText);
             console.log(respuesta);
             //Si la respuesta es correcta
             if (respuesta.respuesta === 'correcto') {
@@ -68,17 +68,5 @@ function validarRegistro(e) {
 
         //Enviar la petición
         xhr.send(datos);
-
-
-
-
-
-
-
-
-
-
-
-
       }
 }
