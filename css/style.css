@@ -102,7 +102,7 @@ body.index {
 .barra h1 {
     color: white;
     margin:0;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 .barra a {
     color: white;
@@ -167,17 +167,17 @@ input#nuevo-proyecto {
 .contenido-principal {
     flex: 1;
     padding: 1rem;
-    overflow: scroll;
+   /* overflow: scroll;*/
 }
 .contenido-principal h1,
 .contenido-principal h2 {
     text-align: center;
 }
 .contenido-principal h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 .contenido-principal h2 {
-    font-size: 1.4rem;
+    font-size: 1rem;
     margin-top: 2rem;
 }
 .contenido-principal h1 span {
@@ -188,7 +188,7 @@ input#nuevo-proyecto {
     width: 90%;
     background-color: #607D8B;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1rem;
     color: white;
     transition: background-color .5s ease-in-out;
     border-radius: 1rem;
@@ -197,10 +197,10 @@ input#nuevo-proyecto {
 /** Listado Pendientes **/
 .listado-pendientes {
     background-color: #F2F2F2;
-    max-width: 800px;
-    width: 90%;
-    margin: 2rem auto 0 auto;
-    padding: 2rem;
+    max-width:600px;
+    width: 80%;
+    margin: 1rem auto 0 auto;
+    padding: 1rem;
     border: 1px solid #999;
     border-radius: 1rem;
 }
@@ -212,7 +212,7 @@ input#nuevo-proyecto {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.4rem;
+    font-size: 1rem;
     border-bottom: 1px solid #d1d1d1;
 }
 .listado-pendientes ul li:last-of-type {
@@ -225,7 +225,7 @@ input#nuevo-proyecto {
     margin-left: 3rem;
 }
 .completo {
-    color: #00B762;
+    color: rgb(0, 189, 22);
 }
 .alerta {
     background-color: red;
@@ -233,4 +233,26 @@ input#nuevo-proyecto {
     text-align: center;
     color: white;
     font-size: 1.2rem;
+}
+.fa-trash {
+    color: red;
+}
+/*Barra de progreso*/
+.barra-avance {
+    height: 30px;
+    border: 1px solid #999;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+    border-radius: 50px;
+    background-color: #F2F2F2;
+}
+.porcentaje {
+    width: 0%;
+    height: 100%;
+    background-color: rgb(0, 189, 22);
+    border-radius: 50px;
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-size: 1rem 1rem;
+    transition: width 2s ease-in-out;
 }
